@@ -1,0 +1,189 @@
+{
+  "metrology": [
+    {
+      "noise_sd": 0.01,
+      "blur_px": 0.5,
+      "contours": "sub-pixel",
+      "outer_d_MAE_um": 1.6,
+      "bore_d_MAE_um": 1.5,
+      "hole_d_MAE_um": 6.0,
+      "pcd_MAE_um": 0.4,
+      "bore_offset_MAE_um": 1.9
+    },
+    {
+      "noise_sd": 0.01,
+      "blur_px": 0.5,
+      "contours": "pixel",
+      "outer_d_MAE_um": 91.3,
+      "bore_d_MAE_um": 91.1,
+      "hole_d_MAE_um": 89.7,
+      "pcd_MAE_um": 3.4,
+      "bore_offset_MAE_um": 2.8
+    },
+    {
+      "noise_sd": 0.03,
+      "blur_px": 1.0,
+      "contours": "sub-pixel",
+      "outer_d_MAE_um": 2.4,
+      "bore_d_MAE_um": 2.1,
+      "hole_d_MAE_um": 9.6,
+      "pcd_MAE_um": 0.9,
+      "bore_offset_MAE_um": 7.6
+    },
+    {
+      "noise_sd": 0.03,
+      "blur_px": 1.0,
+      "contours": "pixel",
+      "outer_d_MAE_um": 92.6,
+      "bore_d_MAE_um": 90.7,
+      "hole_d_MAE_um": 86.8,
+      "pcd_MAE_um": 2.9,
+      "bore_offset_MAE_um": 5.8
+    },
+    {
+      "noise_sd": 0.06,
+      "blur_px": 1.5,
+      "contours": "sub-pixel",
+      "outer_d_MAE_um": 6.9,
+      "bore_d_MAE_um": 3.5,
+      "hole_d_MAE_um": 11.0,
+      "pcd_MAE_um": 2.1,
+      "bore_offset_MAE_um": 22.1
+    },
+    {
+      "noise_sd": 0.06,
+      "blur_px": 1.5,
+      "contours": "pixel",
+      "outer_d_MAE_um": 113.7,
+      "bore_d_MAE_um": 110.0,
+      "hole_d_MAE_um": 99.6,
+      "pcd_MAE_um": 7.2,
+      "bore_offset_MAE_um": 15.6
+    },
+    {
+      "noise_sd": 0.1,
+      "blur_px": 2.0,
+      "contours": "sub-pixel",
+      "outer_d_MAE_um": 10.6,
+      "bore_d_MAE_um": 7.9,
+      "hole_d_MAE_um": 17.1,
+      "pcd_MAE_um": 4.4,
+      "bore_offset_MAE_um": 41.3
+    },
+    {
+      "noise_sd": 0.1,
+      "blur_px": 2.0,
+      "contours": "pixel",
+      "outer_d_MAE_um": 183.4,
+      "bore_d_MAE_um": 176.8,
+      "hole_d_MAE_um": 163.1,
+      "pcd_MAE_um": 9.8,
+      "bore_offset_MAE_um": 27.7
+    },
+    {
+      "noise_sd": 0.1,
+      "blur_px": 3.0,
+      "contours": "sub-pixel",
+      "outer_d_MAE_um": 11.7,
+      "bore_d_MAE_um": 12.1,
+      "hole_d_MAE_um": 42.6,
+      "pcd_MAE_um": 6.0,
+      "bore_offset_MAE_um": 57.7
+    },
+    {
+      "noise_sd": 0.1,
+      "blur_px": 3.0,
+      "contours": "pixel",
+      "outer_d_MAE_um": 252.1,
+      "bore_d_MAE_um": 238.4,
+      "hole_d_MAE_um": 207.2,
+      "pcd_MAE_um": 15.3,
+      "bore_offset_MAE_um": 37.2
+    }
+  ],
+  "inspect_ms_mean": 55.6,
+  "repeatability_sd_um": {
+    "outer_d": 2.34,
+    "bore_d": 2.54,
+    "hole_d": 2.48,
+    "pcd": 1.03,
+    "bore_offset": 0.77
+  },
+  "classification": [
+    {
+      "noise_sd": 0.01,
+      "classical_rules_acc_%": 100.0,
+      "pixel_random_forest_acc_%": 26.6
+    },
+    {
+      "noise_sd": 0.06,
+      "classical_rules_acc_%": 100.0,
+      "pixel_random_forest_acc_%": 23.8
+    },
+    {
+      "noise_sd": 0.1,
+      "classical_rules_acc_%": 100.0,
+      "pixel_random_forest_acc_%": 25.3
+    }
+  ],
+  "confusion_noise_0.06": {
+    "rules": [
+      [
+        80,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        80,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        80,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        80
+      ]
+    ],
+    "random_forest": [
+      [
+        19,
+        21,
+        19,
+        21
+      ],
+      [
+        18,
+        18,
+        27,
+        17
+      ],
+      [
+        31,
+        15,
+        19,
+        15
+      ],
+      [
+        23,
+        20,
+        17,
+        20
+      ]
+    ],
+    "labels": [
+      "good",
+      "missing_hole",
+      "chipped_rim",
+      "eccentric_bore"
+    ]
+  }
+}
